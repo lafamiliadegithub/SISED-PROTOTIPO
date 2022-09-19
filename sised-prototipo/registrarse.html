@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./assests/icono-circule.png" type="image/x-icon">
+</head>
+
+<body id="registrarse">
+    <header>
+        <nav>
+            <ul class="menu-horizontal-x">
+                <li class="lista"><a href="index.html">Inicio</a></li>
+                <li class="lista"><a href="informacion-de-especies.html">Información de especies</a></li>
+                <li class="lista lista-r">
+                    <a href="#">Inicio de sesión</a>
+                    <ul class="menu-vertical">
+                        <li class="desplegable"><a href="./registrarse.html">Registrarse</a></li>
+                        <li class="desplegable"><a href="./inicio_sesion.html">Ingresar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- FORMULARIOB -->
+        <form action="#" class="formulariob" id="formulario"> 
+            
+            <!-- GRUPO DE NOMBRE-->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label class="formulario__label">Nombre y Apellido</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre"
+                        placeholder="Nombre y Apellido" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El nombre debe tener minimo 4 caracteres y solo se admiten números,
+                    letras y guión bajo.</p>
+            </div>
+            
+            <!-- GRUPO DE USUARIO -->
+            <div class="formulario__grupo" id="grupo__usuario">
+                <label class="formulario__label">Nombre de usuario</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="usuario" id="usuario"
+                        placeholder="Nombre Usuario" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El usuario debe tener minimo 4 caracteres y solo se admiten números,
+                    letras y guión bajo.</p>
+            </div>
+
+
+            <!-- GRUPO DE CONTRASEÑA 1-->
+            <div class="formulario__grupo" id="grupo__password">
+                <label class="formulario__label">Contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password" id="password"
+                        placeholder="Contraseña" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">La contraseña debe ser de 4 a 12 digitos</p>
+            </div>
+
+
+            <!-- GRUPO DE CONTRASEÑA 2-->
+            <div class="formulario__grupo" id="grupo__password2">
+                <label class="formulario__label">Repetir la contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password2" id="password2"
+                        placeholder="Repetir contraseña" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">La contraseña no coincide</p>
+            </div>
+
+
+            <!-- GRUPO DE EMAIL -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label class="formulario__label">Correo Electronico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo"
+                        placeholder="correo@hogwarts.com" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El correo debe tener mÍnimo 4 caracteres y sólo se admiten números,
+                    letras y guión bajo.</p>
+            </div>
+
+            <!-- GRUPO DE TELÉFONO -->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="telefono" class="formulario__input" name="telefono" id="telefono"
+                        placeholder="0123456789" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El número debe tener 10 digitos</p>
+            </div>
+
+
+            <!-- GRUPO TERMINOS Y CONDICIONES -->
+            <div class="formulario__grupo formulario__grupo-terminos" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos" required>
+                    <h1 class="formulario__span" style="font-size: 12px;"><strong>Acepto los terminos y condiciones</strong></h1>
+                </label>
+            </div>
+
+            <!-- MENSAJE DE CAMPOS REQUERIDOS -->
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-circle"> <b>Error:</b> Debes completar todos los campos</i></p>
+            </div>
+
+
+            <!-- GRUPO ENVIAR -->
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se envió correctamente
+                </p>
+                <input class="formulario__btn" type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

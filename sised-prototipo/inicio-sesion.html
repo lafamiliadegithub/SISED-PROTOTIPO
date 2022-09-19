@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./assests/icono-circule.png" type="image/x-icon">
+</head>
+
+<body id="inicio_sesion">
+    <header>
+        <nav>
+            <ul class="menu-horizontal-x">
+                <li class="lista lista-a"><a href="index.html">Inicio</a></li>
+                <li class="lista"><a href="informacion-de-especies.html">Información de especies</a></li>
+                <li class="lista lista-r">
+                    <a href="#">Inicio de sesión</a>
+                    <ul class="menu-vertical">
+                        <li class="desplegable"><a href="./registrarse.html">Registrarse</a></li>
+                        <li class="desplegable"><a href="./inicio_sesion.html">Ingresar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="inicio_sesion">
+        <form action="" class="formulario">
+            <div>
+                <div class="unoporlinea">
+                    <label class="formulario__label">Usuario</label>
+                    <input type="text" class="formulario__input" placeholder="Correo o usuario" id="propietario">
+                    <label class="formulario__label">Contraseña</label>
+                    <input type="password" class="formulario__input" placeholder="Contraseña" id="modelo">
+                </div>
+            </div>
+            <input class="formulario__btn" type="submit" value="Iniciar Sesión">
+        </form>
+    </main>
+</body>
